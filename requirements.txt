@@ -1,0 +1,6 @@
+streamlit
+pandas
+plotly
+python-dotenv
+selenium
+webdriver-manager
