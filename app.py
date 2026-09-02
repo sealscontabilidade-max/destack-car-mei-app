@@ -285,4 +285,5 @@ st.divider()
 
 # --- HISTÓRICO COMPLETO ---
 st.subheader("📋 Histórico Completo de Notas Fiscais Registradas")
-st.dataframe(df_notas, width="stretch")
+# Converte uma cópia do DataFrame para texto para evitar erro de estouro (OverflowError)
+st.dataframe(df_notas.astype(str), use_container_width=True)
